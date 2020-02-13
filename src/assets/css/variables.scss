@@ -1,0 +1,152 @@
+$vi-color: #08b192; // 主题色
+$vi-color-light: #fde7ea;
+$text-color: #111;
+$white: #fff;
+$default-bgc: #fff;
+$caret-color: #007aff;
+$green: #35bfa6;
+$green2: #90d58e;
+$darkcyan: #54af9e;
+$cyan: #22bfa9;
+$yellow: #ffc13d;
+$warning-yellow: #f2ad29;
+$red: #e64327;
+$red-bg: #fcf9f8;
+$warning-red: #f05643;
+$light-red: #ec4343;
+$dark-red: #cc0f0f;
+$inputbackground: #f6f6f6;
+$blue: #409eff;
+$blue-dark: #3a8ee6;
+$blue-light: #66b1ff;
+
+$gray-e: #eee;
+$gray-c: #ccc;
+$gray-9: #999;
+$gray-8: #888;
+$gray-6: #666;
+$gray-3: #333;
+$gray-1: #111;
+
+$font-family-base: "Microsoft JhengHei", "微軟正黑體","Microsoft YaHei", "微软雅黑",  "sans-serif";
+
+$border-color: #e5e5e5;
+$border: 1px solid $border-color;
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+    font-family: $font-family-base !important;
+    color: $text-color;
+    font-size: 0.32rem;
+}
+
+@mixin text-overflow() {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@mixin pupup-position($x:-50%) {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate($x,100%);
+}
+
+@mixin left-bottom($l:0,$b:0){
+    position: absolute;
+    left: $l;
+    bottom: $b;
+}
+
+@mixin left-top($l:0,$t:0){
+    position: absolute;
+    left: $l;
+    top: $t;
+}
+
+@mixin right-top($r:0,$t:0){
+    position: absolute;
+    right: $r;
+    top: $t;
+}
+
+@mixin right-bottom($r:0,$b:0){
+    position: absolute;
+    right: $r;
+    bottom: $b;
+}
+
+@mixin left-center($l:0){
+    position: absolute;
+    left: $l;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@mixin right-center($r:0){
+    position: absolute;
+    right: $r;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@mixin top-center($t:0){
+    position: absolute;
+    top: $t;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@mixin bottom-center($b:0){
+    position: absolute;
+    bottom: $b;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@mixin font($size: $default-text-size,$color: $default-text-color,$weight: normal) {
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+}
+
+%flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%z-index-999{
+    z-index: 999;
+}
+
+%absolute-cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+%text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+%center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

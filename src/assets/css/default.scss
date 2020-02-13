@@ -1,0 +1,175 @@
+// HTMLElement
+ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    padding: 0;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.26rem;
+}
+
+p {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+// border
+.border-bottom {
+    border-bottom: $border;
+}
+
+.border-top {
+    border-top: $border;
+}
+
+.border-left {
+    border-left: $border;
+}
+
+.border-right {
+    border-right: $border;
+}
+
+.border {
+    border: $border;
+}
+
+.border-none {
+    border: none;
+}
+
+// flex
+.display-flex {
+    display: flex;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.align-items-center {
+    display: flex;
+    align-items: center;
+}
+
+.flex-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-none {
+    flex: none;
+}
+
+.flex-auto {
+    flex: auto;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// img
+.img-contain {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+// input
+input{
+    outline: none;
+    border: none;
+    box-shadow: none;
+    @include font(0.3rem,#111);
+    caret-color: $caret_color;
+    -webkit-appearance: none;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-transition-delay: 99999s;
+    -webkit-transition: color 99999s ease-out, background-color 99999s ease-out;
+}
+
+//scroll bar
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: #f0f0f0;
+    border-radius: 16px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 16px;
+    background-color: $gray-c;
+}
+
+// display
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: block;
+}
+
+.display-flex {
+    display: flex;
+}
+
+// transition
+.transition-3 {
+    transition: all 0.3s;
+}
+
+.transition-btn {
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+// router
+.router-view {
+    @extend %absolute-cover;
+    transition: all 0.3s;
+    z-index: 1;
+    background-color: $white;
+    font-size: 0.3rem;
+    overflow: hidden;
+}

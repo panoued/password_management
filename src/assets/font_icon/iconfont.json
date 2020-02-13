@@ -1,0 +1,44 @@
+{
+  "id": "1633437",
+  "name": "im_lib_vue",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "8017123",
+      "name": "图标_基药-小三角",
+      "font_class": "leftarrow",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "9304190",
+      "name": "返回",
+      "font_class": "back",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    },
+    {
+      "icon_id": "12986316",
+      "name": "加",
+      "font_class": "jia",
+      "unicode": "e6aa",
+      "unicode_decimal": 59050
+    },
+    {
+      "icon_id": "2237358",
+      "name": "信息",
+      "font_class": "xinxi",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "4630553",
+      "name": "我的",
+      "font_class": "wode",
+      "unicode": "e649",
+      "unicode_decimal": 58953
+    }
+  ]
+}
