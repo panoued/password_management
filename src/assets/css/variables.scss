@@ -1,6 +1,6 @@
 $vi-color: #08b192; // 主题色
 $vi-color-light: #fde7ea;
-$text-color: #111;
+$text-color: #333;
 $white: #fff;
 $default-bgc: #fff;
 $caret-color: #007aff;
@@ -46,7 +46,7 @@ body{
     margin: 0;
     font-family: $font-family-base !important;
     color: $text-color;
-    font-size: 0.32rem;
+    font-size: 0.3rem;
 }
 
 @mixin text-overflow() {
